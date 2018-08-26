@@ -6,15 +6,10 @@
 array_A = [25, 48, 31, 82, 65]
 array_B = [1, 4]
 
-a_len = array_A.length
-b_len = array_B.length
-
 def specify_sum(a, b, a_len, b_len)
   sum = 0
-  for i in 0...b_len
-    sum = sum + a[b[i]]
-  end
+  (b_len).times{ |i| sum = sum + a[b[i]] }
   return sum
 end
 
-p specify_sum(array_A, array_B, a_len, b_len)
+p specify_sum(array_A, array_B, array_A.length, array_B.length)
