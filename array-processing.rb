@@ -6,12 +6,9 @@
 
 
 num = [40, 30, 14, 94]
-length = num.length
-
 def sum_num(num, length)
   ct_len = length - 1
-  loop do
-    break if ct_len == 0
+  while ct_len != 0
     for i in 0...ct_len
       num[i] = num[i] + num[i + 1]
     end
@@ -21,4 +18,4 @@ def sum_num(num, length)
   return num[0]
 end
 
-p sum_num(num, length)
+p sum_num(num, num.length)
