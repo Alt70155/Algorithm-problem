@@ -8,9 +8,7 @@ arr_s = Array.new(arr_t.length)
 
 def update(arr_t, arr_p, arr_x, arr_s)
   arr_s = arr_t
-  for i in 0...arr_p.length - 1
-    arr_s[arr_p[i]] = arr_x[i]
-  end
+  (arr_p.length - 1).times{ |i| arr_s[arr_p[i]] = arr_x[i] }
   return arr_s
 end
 
